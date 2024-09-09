@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/***********************************************
+**       WP Styleguide 984.css v5.50.0        **
+************************************************/
+
+/***   Resets   ***/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, q, blockquote, pre, code, var
+a, big, del, em, font, small, strong, sub, sup,
+b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  font: 13px Arial, Ubuntu, "Lucida Console", Helvetica, sans-serif;
+  line-height: 1.4;
+  min-width: 984px;
+}
+:focus { outline: 0 }
+a { color:#059; text-decoration:none }
+a:hover { text-decoration:underline }
+a img, a:link img, a:visited img, a:active img, a:hover img, fieldset, acronym { border:0 }
+label:hover { cursor:pointer }
+ol, ul { list-style: none }
+form { margin:0; padding:0; display:inline }
+input, select, textarea {
+  font-family: Tahoma, Arial, Ubuntu, "Lucida Console", Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.25;
+}
+
+/***  adv's  ***/
+#adv34, #adv37 { margin: 0 0 10px 0 }
+#adv05 { margin: 10px 0 }
+
+/***  stgCols  ***/
+#stgMain, #wpMain { background-color:#fff; margin:0 auto; width:970px; padding:10px 7px 0; position:static; z-index:0 }
+#wpMain { padding:0 }
+#stgMain:after { display:block; clear:both; content:'' }
+#stgHeader { border-top:5px solid #ccc }
+#stgHeader .stgHeaderContainer { width:984px; margin:0 auto; background-color:#fff }
+#stgHeader .stgHeaderMain { height:72px; margin:0 7px; border-bottom:1px solid #e4e4e4; position:relative }
+#stgHeader .stgHeaderBrie { margin-top:8px; float:left; position:relative; z-index:2; background-color:#fff; padding:0 6px 0 0px; border-radius:7px }
+#stgHeader .stgHeaderLogo { display:block; margin:0; padding:0; float:left; margin-right:6px; }
+#stgHeader .stgHeaderLogoImage, #stgHeader .stgHeaderServiceImage { height:56px }
+/***  WP Styleguide Footer  ***/
+#stgFooter { width:984px; margin:0 auto; font:11px Tahoma, Arial, Ubuntu, "Lucida Console", Helvetica, sans-serif; color:#bdbdbd; background-color:#fff; clear:both; text-align:left; padding:6px 0 15px 0; position:relative; }
+#stgFooter .stgFooterMain { margin:0 7px }
+#stgFooter a:link, #stgFooter a:active, #stgFooter a:visited { font:normal 11px/15px Tahoma, Arial, Ubuntu, "Lucida Console", Helvetica, sans-serif; padding: 0 6px; color: #416aac }
+#stgFooter a:hover { text-decoration:underline }
+#stgFooter #stgFooterRmd { height:15px; overflow:hidden; padding:5px 0 5px 6px; border-top:1px solid #e2e2e2 }
+#stgFooter #stgFooterRmd strong { color:#5a5a5a }
+#stgFooterCnt { height:40px; padding-top:6px; border-top:1px solid #e2e2e2 }
+#stgFooter .stgFooterLnk { float:left }
+#stgFooter .stgFooterSrv { float:right; margin-right:6px }
+#stgFooter .stgFooterSrv .rss { font:bold 9px Tahoma; background-color:#fe7f03; color:#fff; padding:0 2px; margin-left:3px }
+#stgFooter .stgFooterSrv .rss:hover { text-decoration:none; opacity:.9 }
+#stgFooter .stgFooterCopyright { width: 99%; font:11px/12px Tahoma, Arial, Ubuntu, "Lucida Console", Helvetica, sans-serif; text-decoration:none; padding:0; margin:2px 6px 0 0; color:#5a5a5a; line-height:18px; text-align: right; float:right }
+#stgFooter .stgFooterCopyright a:link, #stgFooter .stgFooterCopyright a:active, #stgFooter .stgFooterCopyright a:visited { font:bold 11px/12px Tahoma, Arial, Ubuntu, "Lucida Console", Helvetica, sans-serif; color:#5a5a5a; text-decoration:none; padding:0 }
+/* Style generyczne */
+.clr { height: 1% }
+.clr:after { clear:both; display:block; content:''; }
+.bx { margin-bottom:10px; }
+.bxLogowanie {
+    width: 362px;
+    min-height: 485px;
+    margin-bottom: 25px;
+    position: relative;
+    background-color: transparent !important;
+}
+#rightLogBox {
+    width: 585px;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+    height: 455px;
+    font: 11px Tahoma, Geneva, sans-serif;
+}
+#rightLogBox img {
+    display: block;
+}
+
+.bxZalety {
+    padding-bottom: 20px;
+}
+.bxZalety ul {
+    font-family: "Open Sans", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.bxZalety ul li {
+    border-radius: 10px;
+    float: left;
+    margin-right: 20px;
+    background-color: #f3f3f3;
+    background-image: url(images/sprite_zalety.png);
+    background-repeat: no-repeat;
+}
+.bxZalety ul div {
+    color: #404040;
+    display: block;
+    width: 138px;
+    padding: 100px 20px 0px;
+    height: 80px;
+    position: relative;
+    text-decoration: none;
+}
+.bxZalety ul div strong {
+    display: block;
+    font-weight: 700;
+}
+.bxZalety small {
+    position: absolute;
+    left: 0px;
+    top: -5px;
+    right: 0px;
+    font-size: 0px;
+    line-height: 0px;
+}
+.bxZalety small span {
+    line-height: 23px;
+    background-image: url(images/sprite.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 23px;
+    width: 37px;
+    margin: 0px -1px;
+    text-indent: -9999px;
+}
+.bxZalety small .free {
+    background-position: -244px -457px;
+}
+.bxZalety small .pro {
+    background-position: -193px -457px;
+}
+.bxZalety ul .blue {
+    background-color: #EBF9FF;
+}
+.bxZalety ul .blue a {
+    color: #00adef;
+}
+.bxZalety ul .pojemnosc {
+    background-position: 55px 33px;
+}
+.bxZalety ul .zalaczniki {
+    background-position: -144px 33px;
+}
+.bxZalety ul .antyspam {
+    background-position: -342px 33px;
+}
+.bxZalety ul .reklamy {
+    background-position: -537px 33px;
+}
+.bxZalety ul .pomoc {
+    background-position: -738px 33px;
+    margin-right: 0px;
+}
+#adv06 {
+    text-align: center;
+}
+/*fix for old adverts, when all adverts will be based on new mechanizm, bellow code can be removed*/
+[id^="adv"] {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+[id^="adv"] > div {
+    display: inline-block;
+}
